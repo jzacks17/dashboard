@@ -1,0 +1,54 @@
+
+/* Change all box sizing to border box */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    /* Add flex box to the entire body */
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: grid;
+
+    grid-template-columns: 1fr 4fr;
+
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main";
+}
+
+.header{
+    grid-area: header;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.main{
+    grid-area: main;
+
+    display: grid;
+
+    grid-template-columns: 3fr 1fr;
+
+    grid-template-areas: "projects announcements";
+}
+
+
+.projects{
+    grid-area: projects;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.announcements{
+    grid-area: announcements;
+}
