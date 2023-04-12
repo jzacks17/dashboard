@@ -5,10 +5,10 @@
 
 /* CSS variables */
 :root {
-    --primary-colour: #020222;
+    --primary-colour: rgb(10, 10, 50);
     --secondary-colour: lightgray;
-    --third-colour: #ddca00;
-    --text-colour: #d6d6d6;
+    --third-colour: #00afe0;
+    --text-colour: black;
 }
 
 
@@ -30,6 +30,10 @@ h1 {
     font-size: min(2Vw, 4Vh);
 }
 
+h2{
+    font-size: 1.3Vw;
+}
+
 .header {
     width: 100%;
 
@@ -47,7 +51,7 @@ h1 {
 
     align-items: center;
 
-    color: var(--primary-colour);
+    color: var(--text-colour);
 
 }
 
@@ -159,8 +163,6 @@ h1 {
 
     background-color: lightgray;
     box-shadow: inset 0px 5px 5px rgba(0, 0, 50, 0.2);
-
-    color: var(--primary-colour);
 }
 
 
@@ -170,7 +172,7 @@ h1 {
 
 }
 
-.projects>.grid {
+.projects>.content {
     display: grid;
 
     grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
@@ -178,13 +180,55 @@ h1 {
 }
 
 .project {
-    border: 2px solid black;
+    border: 2px solid var(--primary-colour);
     padding: 10px;
     border-radius: 5px;
     background-color: white;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 50, 0.2);
+
+    font-size: 1Vw;
+}
+
+.project a:link{
+    text-decoration: none;
+    color: var(--third-colour);
+
+}
+
+.project a:visited{
+    text-decoration: none;
+    color: var(--third-colour);
 }
 
 .announcements {
     grid-area: announcements;
+
+    padding: 15px;
+
+}
+
+.announcements > .content{
+    border: 2px solid var(--primary-colour);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 50, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.announcement{
+    font-size: 1Vw;
+}
+
+.line{
+    text-align: center;
+}
+
+.announcements img{
+    width: 85%;
+    align-self: center;
 }
