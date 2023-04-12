@@ -26,7 +26,41 @@ body {
 
 .header{
     grid-area: header;
+
+    display: grid;
+
+    grid-template-columns: 3fr 2fr;
+
+    grid-template-areas: 
+    "search buttons1"
+    "user-info buttons2";
 }
+
+.header>.search{
+    grid-area: search;
+
+    display:flex;
+}
+
+.search>input{
+    border-radius: 1em;
+    flex: 1;
+    background-color: gray;
+    border: 2px solid black;
+}
+
+.header>.buttons1{
+    grid-area: buttons1;
+}
+
+.header>.user-info{
+    grid-area: user-info;
+}
+
+.header>.buttons2{
+    grid-area: buttons2;
+}
+
 
 .sidebar{
     grid-area: sidebar;
