@@ -1,170 +1,189 @@
+/* Change all box sizing to border box */
+* {
+    box-sizing: border-box;
+}
 
-    /* Change all box sizing to border box */
-    * {
-        box-sizing: border-box;
-    }
+/* CSS variables */
+:root {
+    --primary-colour: #020222;
+    --secondary-colour: lightgray;
+    --third-colour: #ddca00;
+    --text-colour: #d6d6d6;
+}
 
-    body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        /* Remove whitespace */
-        margin: 0;
-        display: grid;
 
-        grid-template-columns: 1fr 4fr;
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    /* Remove whitespace */
+    margin: 0;
+    display: grid;
 
-        grid-template-areas: 
+    grid-template-columns: 1fr 4fr;
+
+    grid-template-areas:
         "sidebar header"
         "sidebar main";
-    
-    }
 
-    h1{
-        font-size: min(2Vw, 4Vh);
-    }  
+}
 
-    .header{
-        width: 100%;
-        
-        grid-area: header;
+h1 {
+    font-size: min(2Vw, 4Vh);
+}
 
-        display: grid;
-        gap: 20px;
-        padding: 10px;
+.header {
+    width: 100%;
 
-        grid-template-columns: 3fr 2fr;
+    grid-area: header;
 
-        grid-template-areas: 
+    display: grid;
+    gap: 20px;
+    padding: 10px;
+
+    grid-template-columns: 3fr 2fr;
+
+    grid-template-areas:
         "search buttons1"
         "user-info buttons2";
 
-        align-items: center;
+    align-items: center;
 
-    }
+    color: var(--primary-colour);
 
-    .header>.search{
-        grid-area: search;
+}
 
-        display:flex;
-    }
+.header>.search {
+    grid-area: search;
 
-    .search label{
-        flex: 0 1 5%;
-        display: flex;
-        justify-content: center;
-    }
+    display: flex;
+}
 
-    .search img{
-        width: 75%;
+.search label {
+    flex: 0 1 5%;
+    display: flex;
+    justify-content: center;
+}
 
-        
-    }
-
-    .search>input{
-        border-radius: 1em;
-        flex: 1;
-        background-color: lightgray;
-        border: 2px solid black;
-    }
-
-    .search>input::placeholder{
-        color: rgb(45, 45, 45);
-    }
+.search img {
+    width: 75%;
 
 
-    .header>.buttons1{
-        grid-area: buttons1;
-    }
+}
 
-    .header>.user-info{
-        grid-area: user-info;
-    }
+.search>input {
+    border-radius: 1em;
+    flex: 1;
+    background-color: var(--secondary-colour);
+    border: 2px solid var(--primary-colour);
+}
 
-    .header>.buttons2{
-        grid-area: buttons2;
-
-        display: grid;
-
-        /* Fit all the buttons on one line */
-        grid-template-columns: repeat(auto-fit, minmax(2px,1fr));
-
-        justify-items: center;
-    }
-
-    .buttons2 > button{
-        width: 5Vw;
-
-        height: 2.25Vw;
-
-        padding: 0.5Vw;
-
-        background-color: lightgray;
-
-        border: 2px solid black;
-
-        border-radius: 5Vw;
-
-        font-size: 0.9Vw;
-
-        
-    }
-
-    .buttons2 > button:hover{
-        cursor: pointer;
-
-        background-color: black;
-
-        color: white;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 50, 0.2);
+.search>input::placeholder {
+    color: rgb(45, 45, 45);
+}
 
 
-    }
+.header>.buttons1 {
+    grid-area: buttons1;
+}
 
-    .sidebar{
-        grid-area: sidebar;
+.header>.user-info {
+    grid-area: user-info;
+}
 
-        display: flex;
+.header>.buttons2 {
+    grid-area: buttons2;
 
-        flex-direction: column;
+    display: grid;
 
-        background-color: navy;
-    }
+    /* Fit all the buttons on one line */
+    grid-template-columns: repeat(auto-fit, minmax(2px, 1fr));
 
-    .main{
-        width: 100%;
-        grid-area: main;
+    justify-items: center;
+}
 
-        display: grid;
+.buttons2>button {
+    width: 5Vw;
 
-        grid-template-columns: 3fr 1fr;
+    height: 2.25Vw;
 
-        grid-template-areas: "projects announcements";
-        
-        gap: 15px;
+    padding: 0.5Vw;
 
-        background-color: lightgray;
-        box-shadow: inset 0px 5px 5px rgba(0, 0, 50, 0.2);
-    }
+    background-color: var(--primary-colour);
+
+    color: var(--secondary-colour);
+
+    border-radius: 5Vw;
+
+    font-size: 0.9Vw;
 
 
-    .projects{
-        grid-area: projects;
-        padding: 15px;
-        
-    }
+}
 
-    .projects > .grid{
-        display: grid;
+.buttons2>button:hover {
+    cursor: pointer;
 
-        grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-        gap: 15px;
-    }
+    background-color: var(--secondary-colour);
 
-    .project{
-        border: 2px solid black;
-        padding: 10px;
-        border-radius: 5px;
-        background-color: white;
-    }
-    .announcements{
-        grid-area: announcements;
-    }
+    color: var(--primary-colour);
+
+    color: white;
+
+    border: 2px solid var(--primary-colour);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 50, 0.2);
+
+
+}
+
+.sidebar {
+    grid-area: sidebar;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background-color: var(--primary-colour);
+
+    color: var(--secondary-colour);
+}
+
+.main {
+    width: 100%;
+    grid-area: main;
+
+    display: grid;
+
+    grid-template-columns: 3fr 1fr;
+
+    grid-template-areas: "projects announcements";
+
+    gap: 15px;
+
+    background-color: lightgray;
+    box-shadow: inset 0px 5px 5px rgba(0, 0, 50, 0.2);
+
+    color: var(--primary-colour);
+}
+
+
+.projects {
+    grid-area: projects;
+    padding: 15px;
+
+}
+
+.projects>.grid {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    gap: 15px;
+}
+
+.project {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.announcements {
+    grid-area: announcements;
+}
