@@ -61,6 +61,7 @@ h2{
     display: flex;
 }
 
+
 .search label {
     flex: 0 1 5%;
     display: flex;
@@ -91,6 +92,31 @@ h2{
 
 .header>.user-info {
     grid-area: user-info;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: start;
+
+}
+
+.user-info .photo{
+
+    width: 20%;
+    background-color: var(--primary-colour);
+    border: 2px solid var(--secondary-colour);
+
+    padding: 1Vw;
+
+    border-radius: 10Vw;
+
+    margin-right: 16px;
+}
+
+.user-info img{
+    width: 100%;
+    height: auto;
 }
 
 .header>.buttons2 {
@@ -192,6 +218,10 @@ h2{
 }
 
 .project:hover { transform: scale(1.05); }
+
+.project h2{
+    text-align: center;
+}
 
 .project a:link{
     text-decoration: none;
