@@ -87,7 +87,7 @@
         /* Fit all the buttons on one line */
         grid-template-columns: repeat(auto-fit, minmax(2px,1fr));
 
-        gap: 10px;
+        justify-items: center;
     }
 
     .buttons2 > button{
@@ -95,13 +95,26 @@
 
         padding: 0.5Vw;
 
-        background-color: aqua;
+        background-color: lightgray;
 
-        border: 2px solid blue;
+        border: 2px solid black;
 
         border-radius: 5Vw;
 
-        font-size: 0.9Vw
+        font-size: 0.9Vw;
+
+        
+    }
+
+    .buttons2 > button:hover{
+        cursor: pointer;
+
+        background-color: black;
+
+        color: white;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 50, 0.2);
+
+
     }
 
     .sidebar{
