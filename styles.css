@@ -187,18 +187,32 @@ h2{
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 50, 0.2);
 
     font-size: 1Vw;
+
+    transition: all .2s ease-in-out;
 }
+
+.project:hover { transform: scale(1.05); }
 
 .project a:link{
     text-decoration: none;
-    color: var(--third-colour);
+    color: var(--text-colour);
 
 }
 
 .project a:visited{
     text-decoration: none;
-    color: var(--third-colour);
+    color: var(--text-colour);
 }
+
+.project img{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+
+.project img:hover { transform: scale(1.05); }
+
 
 .announcements {
     grid-area: announcements;
