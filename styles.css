@@ -1,107 +1,149 @@
 
-/* Change all box sizing to border box */
-* {
-    box-sizing: border-box;
-}
+    /* Change all box sizing to border box */
+    * {
+        box-sizing: border-box;
+    }
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-    /* Add flex box to the entire body */
-    display: flex;
-    flex-direction: column;
-}
+        /* Add flex box to the entire body */
+        display: flex;
+        flex-direction: column;
+    }
 
-.container{
-    flex: 1;
-    
-    display: grid;
+    h1{
+        font-size: min(2Vw, 4Vh);
+    }
 
-    grid-template-columns: 1fr 4fr;
+    .container{
+        flex: 1;
+        
+        display: grid;
 
-    grid-template-areas: 
-    "sidebar header"
-    "sidebar main";
-}
+        grid-template-columns: 1fr 4fr;
 
-.header{
-    grid-area: header;
+        grid-template-areas: 
+        "sidebar header"
+        "sidebar main";
+    }
 
-    display: grid;
+    .header{
+        grid-area: header;
 
-    grid-template-columns: 3fr 2fr;
+        display: grid;
+        gap: 20px;
 
-    grid-template-areas: 
-    "search buttons1"
-    "user-info buttons2";
-}
+        grid-template-columns: 3fr 2fr;
 
-.header>.search{
-    grid-area: search;
+        grid-template-areas: 
+        "search buttons1"
+        "user-info buttons2";
+    }
 
-    display:flex;
-}
+    .header>.search{
+        grid-area: search;
 
-.search>input{
-    border-radius: 1em;
-    flex: 1;
-    background-color: gray;
-    border: 2px solid black;
-}
+        display:flex;
+    }
 
-.header>.buttons1{
-    grid-area: buttons1;
-}
+    .search label{
+        flex: 0 1 5%;
+        display: flex;
+        justify-content: center;
+    }
 
-.header>.user-info{
-    grid-area: user-info;
-}
+    .search img{
+        width: 75%;
 
-.header>.buttons2{
-    grid-area: buttons2;
-}
+        
+    }
 
+    .search>input{
+        border-radius: 1em;
+        flex: 1;
+        background-color: lightgray;
+        border: 2px solid black;
+    }
 
-.sidebar{
-    grid-area: sidebar;
-
-    display: flex;
-
-    flex-direction: column;
-}
-
-.main{
-    grid-area: main;
-
-    display: grid;
-
-    grid-template-columns: 3fr 1fr;
-
-    grid-template-areas: "projects announcements";
-    
-    gap: 15px;
-}
+    .search>input::placeholder{
+        color: rgb(45, 45, 45);
+    }
 
 
-.projects{
-    grid-area: projects;
-    padding: 15px;
-    background-color: gray;
-}
+    .header>.buttons1{
+        grid-area: buttons1;
+    }
 
-.projects > .grid{
-    display: grid;
+    .header>.user-info{
+        grid-area: user-info;
+    }
 
-    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-    gap: 15px;
-}
+    .header>.buttons2{
+        grid-area: buttons2;
 
-.project{
-    border: 2px solid black;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: white;
-}
-.announcements{
-    grid-area: announcements;
-}
+        display: grid;
+
+        /* Fit all the buttons on one line */
+        grid-template-columns: repeat(auto-fit, minmax(2px,1fr));
+
+        gap: 10px;
+    }
+
+    .buttons2 > button{
+        width: 5Vw;
+
+        padding: 0.5Vw;
+
+        background-color: aqua;
+
+        border: 2px solid blue;
+
+        border-radius: 5Vw;
+
+        font-size: 0.9Vw
+    }
+
+    .sidebar{
+        grid-area: sidebar;
+
+        display: flex;
+
+        flex-direction: column;
+    }
+
+    .main{
+        grid-area: main;
+
+        display: grid;
+
+        grid-template-columns: 3fr 1fr;
+
+        grid-template-areas: "projects announcements";
+        
+        gap: 15px;
+    }
+
+
+    .projects{
+        grid-area: projects;
+        padding: 15px;
+        background-color: gray;
+    }
+
+    .projects > .grid{
+        display: grid;
+
+        grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+        gap: 15px;
+    }
+
+    .project{
+        border: 2px solid black;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: white;
+    }
+    .announcements{
+        grid-area: announcements;
+    }
