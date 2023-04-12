@@ -32,6 +32,17 @@ h1 {
 
 h2{
     font-size: 1.3Vw;
+    
+}
+
+h3{
+    font-size: 1.1Vw;
+    
+}
+
+
+p{
+    font-size: 1Vw;
 }
 
 .header {
@@ -41,13 +52,13 @@ h2{
 
     display: grid;
     gap: 20px;
-    padding: 10px;
+    padding: 16px;
 
     grid-template-columns: 3fr 2fr;
 
     grid-template-areas:
-        "search buttons1"
-        "user-info buttons2";
+        "search notification"
+        "user-info buttons";
 
     align-items: center;
 
@@ -79,15 +90,54 @@ h2{
     flex: 1;
     background-color: var(--secondary-colour);
     border: 2px solid var(--primary-colour);
+    font-size: 1Vw;
 }
 
 .search>input::placeholder {
+
+    font-size: 1Vw;
     color: rgb(45, 45, 45);
 }
 
 
-.header>.buttons1 {
-    grid-area: buttons1;
+.header>.notification {
+    grid-area: notification;
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: right;
+
+    margin: 0px 24px;
+
+
+}
+
+.notification .bell{
+    width: 12%;
+
+    margin-right: 16px;
+}
+
+.notification .bell img{
+    width: 100%;
+    height: auto;
+}
+
+.notification .avatar{
+
+    width: 12%;
+    background-color: var(--primary-colour);
+    border: 2px solid var(--secondary-colour);
+
+    padding: 0.5Vw;
+
+    border-radius: 10Vw;
+
+    margin-right: 16px;
 }
 
 .header>.user-info {
@@ -101,7 +151,7 @@ h2{
 
 }
 
-.user-info .photo{
+.user-info .avatar{
 
     width: 20%;
     background-color: var(--primary-colour);
@@ -114,13 +164,13 @@ h2{
     margin-right: 16px;
 }
 
-.user-info img{
+.avatar img{
     width: 100%;
     height: auto;
 }
 
-.header>.buttons2 {
-    grid-area: buttons2;
+.header>.buttons {
+    grid-area: buttons;
 
     display: grid;
 
@@ -130,7 +180,7 @@ h2{
     justify-items: center;
 }
 
-.buttons2>button {
+.buttons>button {
     width: 5Vw;
 
     height: 2.25Vw;
@@ -148,7 +198,7 @@ h2{
 
 }
 
-.buttons2>button:hover {
+.buttons>button:hover {
     cursor: pointer;
 
     background-color: var(--secondary-colour);
@@ -212,8 +262,6 @@ h2{
     background-color: white;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 50, 0.2);
 
-    font-size: 1Vw;
-
     transition: all .2s ease-in-out;
 }
 
@@ -264,9 +312,6 @@ h2{
     
 }
 
-.announcement{
-    font-size: 1Vw;
-}
 
 .line{
     text-align: center;
