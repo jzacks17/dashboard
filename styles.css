@@ -30,18 +30,18 @@ h1 {
     font-size: min(2Vw, 4Vh);
 }
 
-h2{
+h2 {
     font-size: 1.3Vw;
-    
+
 }
 
-h3{
+h3 {
     font-size: 1.1Vw;
-    
+
 }
 
 
-p{
+p {
     font-size: 1Vw;
 }
 
@@ -116,18 +116,18 @@ p{
 
 }
 
-.notification .bell{
+.notification .bell {
     width: 12%;
 
     margin-right: 16px;
 }
 
-.notification .bell img{
+.notification .bell img {
     width: 100%;
     height: auto;
 }
 
-.notification .avatar{
+.notification .avatar {
 
     width: 12%;
     background-color: var(--primary-colour);
@@ -151,7 +151,7 @@ p{
 
 }
 
-.user-info .avatar{
+.user-info .avatar {
 
     width: 20%;
     background-color: var(--primary-colour);
@@ -164,7 +164,7 @@ p{
     margin-right: 16px;
 }
 
-.avatar img{
+.avatar img {
     width: 100%;
     height: auto;
 }
@@ -213,13 +213,61 @@ p{
 .sidebar {
     grid-area: sidebar;
 
-    display: flex;
-
-    flex-direction: column;
+    
 
     background-color: var(--primary-colour);
 
     color: var(--secondary-colour);
+
+    padding: 16px;
+}
+
+.sidebar .container{
+    display: flex;
+
+    flex-direction: column;
+}
+
+.sidebar h1{
+    transition: all .2s ease-in-out;
+}
+
+.sidebar h1:hover{
+    cursor: pointer;
+
+    transform: scale(1.05);
+
+    text-shadow: 2px 0 10px var(--third-colour);
+}
+
+.sidebar .item {
+    display: flex;
+
+    align-items: center;
+
+    transition: all .2s ease-in-out;
+}
+
+.sidebar .item:hover {
+    cursor: pointer;
+
+    transform: scale(1.05);
+
+    text-shadow: 2px 0 10px var(--third-colour);
+
+}
+
+.sidebar .item img{
+    fill: var(--third-colour);
+}
+
+
+.sidebar img {
+    width: 10%;
+}
+
+.sidebar h2 {
+    margin-left: 16px;
 }
 
 .main {
@@ -262,31 +310,35 @@ p{
     transition: all .2s ease-in-out;
 }
 
-.project:hover { transform: scale(1.05); }
+.project:hover {
+    transform: scale(1.05);
+}
 
-.project h2{
+.project h2 {
     text-align: center;
 }
 
-.project a:link{
+.project a:link {
     text-decoration: none;
     color: var(--text-colour);
 
 }
 
-.project a:visited{
+.project a:visited {
     text-decoration: none;
     color: var(--text-colour);
 }
 
-.project img{
+.project img {
     width: 100%;
     height: auto;
     text-align: center;
     transition: all .2s ease-in-out;
 }
 
-.project img:hover { transform: scale(1.05); }
+.project img:hover {
+    transform: scale(1.05);
+}
 
 
 .announcements {
@@ -296,7 +348,7 @@ p{
 
 }
 
-.announcements > .content{
+.announcements>.content {
     border: 2px solid var(--primary-colour);
     padding: 10px;
     border-radius: 5px;
@@ -306,15 +358,15 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 
-.line{
+.line {
     text-align: center;
 }
 
-.announcements img{
+.announcements img {
     width: 85%;
     align-self: center;
 }
