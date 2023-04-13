@@ -66,6 +66,7 @@ p {
 
 }
 
+
 .header>.search {
     grid-area: search;
 
@@ -149,6 +150,7 @@ p {
 
     justify-content: start;
 
+
 }
 
 .user-info .avatar {
@@ -178,6 +180,7 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(2px, 1fr));
 
     justify-items: center;
+
 }
 
 .buttons>button {
@@ -219,13 +222,18 @@ p {
 
     color: var(--secondary-colour);
 
-    padding: 16px;
+    
 }
 
 .sidebar .container{
+    padding: 16px;
+
     display: flex;
 
     flex-direction: column;
+
+    position:sticky;
+    top:0;
 }
 
 .sidebar h1{
