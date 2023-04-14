@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 24 24"
+   fill="none"
+   version="1.1"
+   id="svg30"
+   sodipodi:docname="dashboard.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs34" />
+  <sodipodi:namedview
+     id="namedview32"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.0175"
+     inkscape:cx="400"
+     inkscape:cy="400.4914"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg30" />
+  <g
+     id="SVGRepo_bgCarrier"
+     stroke-width="0" />
+  <g
+     id="SVGRepo_tracerCarrier"
+     stroke-linecap="round"
+     stroke-linejoin="round" />
+  <g
+     id="SVGRepo_iconCarrier"
+     style="fill:#d3d3d3;stroke:#d3d3d3;stroke-opacity:1;fill-opacity:1">
+    <path
+       d="M13 12C13 11.4477 13.4477 11 14 11H19C19.5523 11 20 11.4477 20 12V19C20 19.5523 19.5523 20 19 20H14C13.4477 20 13 19.5523 13 19V12Z"
+       stroke="#0a0a32"
+       stroke-width="2"
+       stroke-linecap="round"
+       id="path21"
+       style="fill:#d3d3d3;stroke:#d3d3d3;stroke-opacity:1;fill-opacity:1" />
+    <path
+       d="M4 5C4 4.44772 4.44772 4 5 4H9C9.55228 4 10 4.44772 10 5V12C10 12.5523 9.55228 13 9 13H5C4.44772 13 4 12.5523 4 12V5Z"
+       stroke="#0a0a32"
+       stroke-width="2"
+       stroke-linecap="round"
+       id="path23"
+       style="fill:#d3d3d3;stroke:#d3d3d3;stroke-opacity:1;fill-opacity:1" />
+    <path
+       d="M4 17C4 16.4477 4.44772 16 5 16H9C9.55228 16 10 16.4477 10 17V19C10 19.5523 9.55228 20 9 20H5C4.44772 20 4 19.5523 4 19V17Z"
+       stroke="#0a0a32"
+       stroke-width="2"
+       stroke-linecap="round"
+       id="path25"
+       style="fill:#d3d3d3;stroke:#d3d3d3;stroke-opacity:1;fill-opacity:1" />
+    <path
+       d="M13 5C13 4.44772 13.4477 4 14 4H19C19.5523 4 20 4.44772 20 5V7C20 7.55228 19.5523 8 19 8H14C13.4477 8 13 7.55228 13 7V5Z"
+       stroke="#0a0a32"
+       stroke-width="2"
+       stroke-linecap="round"
+       id="path27"
+       style="fill:#d3d3d3;stroke:#d3d3d3;stroke-opacity:1;fill-opacity:1" />
+  </g>
+</svg>

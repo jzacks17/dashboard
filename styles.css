@@ -236,7 +236,7 @@ p {
     top:0;
 }
 
-.sidebar h1{
+/* .sidebar h1{
     transition: all .2s ease-in-out;
 }
 
@@ -246,7 +246,7 @@ p {
     transform: scale(1.05);
 
     text-shadow: 2px 0 10px var(--third-colour);
-}
+} */
 
 .sidebar .item {
     display: flex;
